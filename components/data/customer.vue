@@ -1,6 +1,6 @@
 
 <template>
-    <div class="mt-12 bg-white p-4 rounded shadow-md">
+    <div class="mt-12 bg-white p-4 rounded ">
         <h2 class="text-2xl font-bold mb-4">User List Table</h2>
         <div class="mb-4 md:w-1/4 w-1.2">
             <input
@@ -10,7 +10,7 @@
             />
         </div>
         <div>
-            <div v-if="loading" class="text-gray-600 mb-2">Loading users...</div>
+            <div v-if="loading" class="text-gray-600 mb-2">Loading User Data...</div>
             <DxDataGrid v-else :data-source="filteredUsers" :show-borders="true" key-expr="id">
                 <DxColumn data-field="name" caption="Name" />
                 <DxColumn data-field="email" caption="Email" />
